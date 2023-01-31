@@ -1,0 +1,179 @@
+/* Create the header at the top of the page */
+
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: #f2f2f2;
+  position: relative;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+  
+.header-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.header-nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-size:25px;
+
+}
+
+nav a.active {
+  color: #6501fc
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #6501fc;
+}
+
+/* Seperate the page into left and right with a divider in the middle */
+.header-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 33.33%;
+    border-right: 1px solid #ccc;
+    padding-right: 20px;
+  }
+  
+
+.header-right {
+    flex: 1;
+    text-align: right;
+    margin-left: 50px;
+  }
+
+  .image1 {
+    border-radius: 50%; /* makes the corners rounded and forms a circle */
+    width: 200px; /* sets the width of the image */
+    height: 200px; /* sets the height of the image */
+    object-fit: cover; /* crops the image to fit inside the circle */
+  }
+
+  /* Change all the fonts */
+  body {
+    font-family: 'Garamond', serif;
+    text-align: left;
+  }
+
+  h1  {
+    font-family: 'Garamond', serif;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  h2  {
+    font-family: 'Garamond', serif;
+    margin-bottom: 0px;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  p.large-text {
+    font-size: 20px;
+    text-align: left;
+}
+
+
+/* Media query for desktop devices */
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Media query for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* center and space all the checkboxes */
+input[type="checkbox"] {
+  float: left;
+  }
+  
+.checkbox-container {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: left;
+  }
+.checkbox-container label {
+      margin-right: 20px;
+  }
+
+  input[type="checkbox"] {
+    vertical-align: middle;
+}
+/* Space the labels */
+label {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/* space and enlarge the progress bars*/
+progress {
+  float: left;
+  margin-left: 10px;
+  height: 40px;
+  width: 70%
+}
+  
+/* left align for labels*/
+.left-aligned {
+  float: left;
+  margin-left: 5px
+}
+
+/*Make the lists items larger*/
+
+li {
+  font-size: 30px;
+  font-family: 'Garamond', serif;
+}
+
+ul {
+  text-align: left;
+}
+
+form {
+  text-align: left;
+}
+
+em {
+  text-align: left;
+  display: block;
+  font-size: 30px;
+}
